@@ -311,7 +311,7 @@ $(function() {
     if ($('.tweet').length) {
         $('.tweet').twittie({
             'count': 2,
-            'username': 'Cambridge_Uni',
+            'username': 'BodkeClasses',
             'hideReplies': true,
             'template': '<i class="fa fa-twitter fa-tweet" aria-hidden="true"></i> <div> {{tweet}} </div>',
             'apiPath': 'php/twitter/tweet.php',
