@@ -6,9 +6,9 @@ error_reporting(0);
  * ------------------------------------
  */
  
-$to    = "test@surjithctly.in"; // <--- Your email ID here
+$to    = "pratikandzidane10@gmail.com"; // <--- Your email ID here
 
-$server_email = 'webmaster@web3canvas.com';  // Your server email to authenticate outgoing emails. eg: name@yourdomain.com
+$server_email = 'info@prproductions.co.in';  // Your server email to authenticate outgoing emails. eg: name@yourdomain.com
 /*
  * ------------------------------------
  * END CONFIGURATION
