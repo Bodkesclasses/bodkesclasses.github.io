@@ -9,13 +9,11 @@
 	font-style: normal;
 }
 
-/* Add the following classes to your stylesheet if you want to use data attributes for inserting your icons */
 .iconb:before, .icona:after {
 	font-family: 'IcoMoon';
 	content: attr(data-icon);
 }
 
-/* Add the following CSS properties to your stylesheet if you want to have a class per icon */
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'IcoMoon';
 	font-style: normal;

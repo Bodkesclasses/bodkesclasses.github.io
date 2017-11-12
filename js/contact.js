@@ -1,23 +1,7 @@
-/*
-
-Script  : Contact Form
-Version : 1.0
-Author  : Surjith S M
-URI     : http://themeforest.net/user/surjithctly
-
-Copyright © All rights Reserved
-Surjith S M / @surjithctly
-
-*/
-
 $(function() {
 
     "use strict";
 
-
-    /* ================================================
-   jQuery Validate - Reset Defaults
-   ================================================ */
 
     $.validator.setDefaults({
         ignore: [],
@@ -40,9 +24,7 @@ $(function() {
         }
     });
 
-    /* 
-    VALIDATE
-    -------- */
+
 
     $("#phpcontactform").submit(function(e) {
         e.preventDefault();
@@ -66,9 +48,6 @@ $(function() {
 
             $("#js-contact-btn").attr("disabled", true);
 
-            /* 
-            CHECK PAGE FOR REDIRECT (Thank you page)
-            ---------------------------------------- */
 
             var redirect = $('#phpcontactform').data('redirect');
             var noredirect = false;
@@ -78,18 +57,12 @@ $(function() {
 
             $("#js-contact-result").html('<p class="help-block">Please wait...</p>');
 
-            /* 
-            FETCH SUCCESS / ERROR MSG FROM HTML DATA-ATTR
-            --------------------------------------------- */
 
             var success_msg = $('#js-contact-result').data('success-msg');
             var error_msg = $('#js-contact-result').data('error-msg');
 
             var dataString = $(form).serialize();
 
-            /* 
-             AJAX POST
-             --------- */
 
             $.ajax({
                 type: "POST",
